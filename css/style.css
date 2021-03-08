@@ -1,0 +1,131 @@
+/* geldt voor de hele pagina */
+body {
+    background-color: lightsteelblue;
+    box-sizing: border-box;
+}
+
+header {
+    /* omlijning om achtergrondkleur heen */
+    border: 2px dashed black;
+    text-align: center;
+    background-color: darksalmon;
+}
+
+footer {
+    text-align: center;
+}
+
+h1,
+h2 {
+    /* ruimte tussen verschillende elementen/boxen in, buiten de border */
+    margin: 10px;
+    font-size: 190%;
+}
+
+h3 {
+    /* ruimte tussen verschillende elementen/boxen in, buiten de border */
+    margin: 10px;
+    /* ruimte tussen content en border in */
+    /* top&bottom left&right */
+    padding: 15px 10px;
+    font-size: 190%;
+}
+
+h4 {
+    /* ruimte tussen verschillende elementen/boxen in, buiten de border */
+    margin: 10px;
+    /* ruimte tussen content en border in */
+    /* top&bottom left&right */
+    padding: 15px 10px;
+    font-size: 150%;
+    font-weight: lighter;
+}
+
+p {
+    /* ruimte tussen verschillende elementen/boxen in, buiten de border */
+    margin: 10px;
+}
+
+/* opmaak van de 'balk' om de 6 afbeeldingen heen */
+.zesAfbeeldingen {
+    background-color: darksalmon;
+    /* ruimte tussen content en border in */
+    padding: 5px;
+}
+
+/*opmaak van het in te vullen formulier */
+#formulier {
+    /* omlijning om achtergrondkleur heen */
+    border: 2px dashed black;
+    /* afbeeldingen zijn 50% van de viewport width */
+    width: 50vw;
+    /* ruimte tussen verschillende elementen/boxen in, buiten de border */
+    /* margin top, right, bottom, left */
+    margin: 10px 5px 10px 0;
+    /* ruimte tussen content en border in */
+    padding: 5px;
+    text-align: center;
+}
+
+/*opmaak van de live preview kant */
+#verjaardagskaart {
+    /* omlijning om achtergrondkleur heen */
+    border: 2px dashed black;
+    /* afbeeldingen zijn 50% van de viewport width */
+    width: 50vw;
+    /* ruimte tussen verschillende elementen/boxen in, buiten de border */
+    /* margin top, right, bottom, left */
+    margin: 10px 0 10px 5px;
+    /* ruimte tussen content en border in */
+    padding: 5px;
+    text-align: center;
+}
+
+/*opmaak van de live preview verjaardagskaart */
+#livePreview {
+    /* kaartkleur is 46% van de viewport width */
+    width: 46vw;
+    /* kaartkleur is 47% van de viewport height */
+    height: 47vw;
+    /* ruimte tussen verschillende elementen/boxen in, buiten de border */
+    margin: 10px;
+    /* ruimte tussen content en border in */
+    padding: 5px;
+    text-align: center;
+}
+
+/* ontwerp + live preview naast elkaar laten verschijnen ipv onder elkaar */
+#ontwerp {
+    /* formulier en verjaardagskaart komen hierdoor naast elkaar waarbij formulier links komt en verjaardagskaart rechts komt */
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+/* de 6 afbeeldingen in het formulier */
+.afbeeldingKlein {
+    /* afbeeldingen zijn 15% van de viewport width */
+    width: 15vw;
+    /* ruimte tussen verschillende elementen/boxen in, buiten de border */
+    margin: 2.5px;
+}
+
+/* de afbeelding in de live preview */
+.afbeeldingGroot {
+    /* afbeelding is 35% van de viewport width */
+    width: 35vw;
+}
+
+/* het aanpassen van de kleur van de kaart, de class wordt telkens aangepast in Javascript, dit zijn de classes die dan gekozen kunnen worden*/
+.wit {
+    background-color: white;
+}
+.roze {
+    background-color: #FFDBE7;
+}
+.lichtblauw {
+    background-color: #D1EDFF;
+}
+.geel {
+    background-color: #FFFFD1;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ontwerp jouw persoonlijke verjaardagskaart!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ontwerp jouw persoonlijke verjaardagskaart!</h1>
+    </header>
+
+    <main>
+        <section id="ontwerp">
+            <!-- het in te vullen formulier -->
+            <section id="formulier">
+                <h2> Creëer hier jouw persoonlijke kaart!</h2>
+                    <!-- naam jarige -->
+                    <label for="naam">De naam van de jarige:</label>
+                    <br />
+                    <input type="text" id="naam" name="naam">
+                    <br />
+                    <p>Ondertitel:</p>
+                    <!-- 4 verschillende buttons met ondertitel opties -->
+                    <div>
+                    <button id="geniet">Geniet van deze mooie dag!</button>
+                    <button id="verwen">Laat je maar eens flink verwennen vandaag!</button>
+                    <button id="leven">Lang zal je leven!</button>
+                    <button id="gezond">Op nog vele gezonde jaren erbij!</button>
+                    </div>
+                    <br />
+                    <!-- 4 radio buttons met kaartkleuren -->
+                    <p>Kies een kaartkleur:</p>
+                    <div class="radiobuttons">
+                        <input type="radio" id="wit" name="kaartkleur" value="wit">
+                        <label for="wit">Wit</label>
+
+                        <input type="radio" id="roze" name="kaartkleur" value="roze">
+                        <label for="roze">Roze</label>
+
+                        <input type="radio" id="lichtblauw" name="kaartkleur" value="lichtblauw">
+                        <label for="lichtblauw">Lichtblauw</label>
+
+                        <input type="radio" id="geel" name="kaartkleur" value="geel">
+                        <label for="geel">Geel</label>
+                    </div> <!-- end of radiobuttons -->
+                    <br />
+                    <p>Kies een afbeelding:</p>
+                    <!-- 6 keuzes qua afbeelding voor op de kaart -->
+                    <div class="zesAfbeeldingen">
+                        <img class="afbeeldingKlein" src="images/balloons.jpg" alt="Acht witte helium ballonnen met gouden verfspetters en gouden lintjes.">
+                        <!-- bron: https://nl.pinterest.com/pin/387239267963486829/ -->
+
+                        <img class="afbeeldingKlein" src="images/birthdaygirl.jpg" alt="Jonge dame met een feesthoedje op, champagne in de hand en een taart op schoot.">
+                        <!-- bron: https://nl.pinterest.com/pin/387239267963487089/ -->
+
+                        <img class="afbeeldingKlein" src="images/champagne.jpg" alt="Champagne wat geheven wordt door één iemand met ballonnen en confetti op de achtergrond.">
+                        <!-- bron: https://nl.pinterest.com/pin/387239267963487076/ -->
+
+                        <img class="afbeeldingKlein" src="images/confetti&birthdaygirl.jpg" alt="Jonge dame zittend op de bankleuning met champagne in haar handen en confetti in de lucht.">
+                        <!-- bron: https://nl.pinterest.com/pin/387239267963486999/ -->
+
+                        <img class="afbeeldingKlein" src="images/chocolate%20cake.jpg" alt="Een hoge witte taart met chocolade op de bovenkant die ervan af druipt. Verder op de bovenkant nog allerlei chocolade, zoals twix, bonbons, oreo en macarons.">
+                        <!-- bron: https://nl.pinterest.com/pin/387239267963486992/ -->
+
+                        <img class="afbeeldingKlein" src="images/birthdayprincess.jpg" alt="Een jonge dame zittend op de grond tussen de confetti in een princessenjurk met een kroontje op haar hoofd met een fles champagne en een taart ernaast.">
+                        <!-- bron: https://nl.pinterest.com/pin/387239267963487055/ -->
+                    </div> <!-- end of zesAfbeeldingen -->
+            </section> <!-- end of formulier -->
+
+            <!-- de live preview kaart -->
+            <section id="verjaardagskaart">
+               <h2> Bekijk hier jouw persoonlijke kaart!</h2>
+               <section id="livePreview">
+                <h3 id="kaartTitel"></h3>
+                <img class="afbeeldingGroot" src="" alt="">
+                <h4 id="kaartOndertitel"></h4>
+                </section> <!-- end of live preview -->
+            </section> <!-- end of verjaardagskaart -->
+        </section> <!-- end of ontwerp -->
+    </main>
+
+    <footer>
+        <p>&copy; Made by Anniek Baarse</p>
+    </footer>
+    <script src="js/verjaardagskaart.js"></script>
+</body></html>
